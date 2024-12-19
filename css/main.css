@@ -20,16 +20,7 @@ body {
   perspective: 1000px;
 }
 
-#lyrics {
-  font-size: 28px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: white;
-  position: absolute;
-  margin-bottom: 20%;
-  z-index: 1;
-  font-weight: bold;
-  letter-spacing: 4px;
-}
+
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
@@ -42,13 +33,15 @@ body {
 .titulo {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
+  color: rgb(255, 255, 255);
   position: absolute;
   font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
+  width: 90%;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
+  font-size: 30px;
 }
 @keyframes fadeIn {
   from {
@@ -57,6 +50,14 @@ body {
   to {
     opacity: 1;
   }
+}
+
+
+
+.para{
+  margin-bottom: 7rem;
+  color: #fff;
+  z-index: 100;
 }
 
 .night {
@@ -238,7 +239,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  background-color: #f9fd25;
+  background-color: #fd256d;
   /* background-color: #fd2525; */
   filter: blur(10vmin);
 }
@@ -250,7 +251,7 @@ body {
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
   background-color: #253bfd;
-  background-color: #fddd25;
+  background-color: #e01134;
   transform-origin: bottom center;
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
@@ -270,7 +271,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-color: #7c6901;
+  background-color: #b30e29;
   z-index: 1;
   opacity: 0.8;
 }
@@ -408,7 +409,7 @@ body {
       transparent,
       rgba(255, 255, 255, 0.2)
     ),
-    linear-gradient(to top, transparent 10%, #14757a, #39c6d6);
+    linear-gradient(to top, transparent 10%, #43ca22, #39d641);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   -webkit-animation: grow-flower-tree 4s backwards;
   animation: grow-flower-tree 4s backwards;
@@ -462,7 +463,7 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(255, 251, 0);
+  background-color: rgb(255, 0, 43);
   border-radius: 50%;
   filter: blur(0.2vmin);
   -webkit-animation: light-ans 4s linear infinite backwards;
